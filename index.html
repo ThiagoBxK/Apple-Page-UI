@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <header>
+      <div class="logo-container">
+        <img src="./images/logo.svg" alt="Apple Logo" />
+      </div>
+      <div class="navbar-container">
+        <button id="hamburger" class="hamburger-menu" onclick="openMenu()"></button>
+      </div>
+    </header>
+
+    <div id="menu" hidden>
+      <ul class="menu-links">
+        <li>
+          <a href="#">Store</a>
+        </li>
+        <li>
+          <a href="#">Mac</a>
+        </li>
+        <li>
+          <a href="#">iPad</a>
+        </li>
+        <li>
+          <a href="#">iPhone</a>
+        </li>
+        <li>
+          <a href="#">AirPods</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home-content">
+      <div class="logo-backdrop">
+        <img src="./images/apple-logo.svg" />
+      </div>
+
+      <div class="new-iphone">iPhone 15 Pro</div>
+      <div class="slogan">Think Different</div>
+      <span class="iphone-new-version">Titanium</span>
+    </div>
+
+    <div class="slideshow">
+      <div class="images">
+        <img id="slide-image" src="./images/black-titanium.png" alt="iPhone 15 Pro"/>
+      </div>
+      
+      <button class="buy-button">Buy</button>
+      
+      <div class="dots">
+        <div class="dot titanium-natural" onclick="changeSlide(this, 0)"></div>
+        <div class="dot titanium-blue" onclick="changeSlide(this, 1)"></div>
+        <div class="dot titanium-white" onclick="changeSlide(this, 2)"></div>
+        <div class="dot titanium-black" onclick="changeSlide(this, 3)"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
